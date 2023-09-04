@@ -15,9 +15,9 @@
                 <div class="about-container mb-4">
         
                     <h1 class="heading color-theme">
-                        <span class="">Everyone</span>
-                        <span class="">deserves a roof</span>
-                        <span> over their head for housing </span>
+                        <span class="">Everyone deserves a roof over their head for housing</span>
+                        {{-- <span class=""> </span>
+                        <span>  </span> --}}
                     </h1>
             
                 </div>

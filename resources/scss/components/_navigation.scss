@@ -1,0 +1,10 @@
+.navigation{
+    &__list{
+        list-style-type: none;
+        display: block;
+    }
+    
+    &__item{
+        text-decoration: none !important;
+    }
+}

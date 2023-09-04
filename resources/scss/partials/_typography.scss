@@ -6,6 +6,8 @@ body{
     font-family: 'tt_firs_neueregular', Arial, sans-serif;
     font-size: 1.6rem;
     color: #000000;
+
+    counter-reset: Serial;
 }
 .heading{
     font-size: 7rem;

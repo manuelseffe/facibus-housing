@@ -25,6 +25,25 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+// AUTH
+Route::get('/register', function () {
+    return view('auth/register');
+});
+Route::get('/verify', function () {
+    return view('auth/verify');
+});
 Route::get('/login', function () {
     return view('auth/login');
+});
+Route::get('/forget-password', function () {
+    return view('auth/forget-password');
+});
+Route::get('/identity_verification', function () {
+    return view('auth/identity_verification');
+});
+
+// USER DASHBOARD
+Route::get('/dashboard', function (){
+    return view('user/dashboard');
 });

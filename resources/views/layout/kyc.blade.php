@@ -42,21 +42,30 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
-                <div class="auth__image-bg">
-                  
-                    <div class="auth__logo">
-                        <a href="/"><img src="{{ asset('img/logo.png') }}" alt="mkm" class="images" /></a>
-                    </div>
-                
-                    <div class="auth__image">
-                        <img src="{{ asset('img/auth.png') }}" alt="mkm" class="images" />
-                    </div>
-                  
+            <div class="col-md-6 auth-bg pd-0">
+
+                <div class="auth__logo">
+                    <a href="/"><img src="{{ asset('img/logo.png') }}" alt="mkm" class="images" /></a>
                 </div>
+            
+                <div class="auth__image">
+                    <img src="{{ asset('img/auth.png') }}" alt="mkm" class="images" />
+                </div>
+
             </div>
-            <div class="col-md-6 flexMe">
-                @yield('content')
+            <div class="col-md-6">
+                <div class="hasCenter FlexMe">
+                    <div class="auth__verification mt-3 mb-5">
+                        <div class="arrow">&larr;</div>
+                        <ol class="auth__verification--order">
+                            <li class="auth__verification--list"> Identity verification</li>
+                            <li class="auth__verification--list">Document verification</li>
+                            <li class="auth__verification--list">Pending review</li>
+                        </ol>
+                    </div>
+                </div>
+                     @yield('content')
+       
             </div>
         </div>
     </div>

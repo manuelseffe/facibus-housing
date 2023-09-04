@@ -1,8 +1,82 @@
 .auth{
 
+    &__bg{
+        width: 80%;
+        // padding: 50px 30px;
+        padding:  16px 30px;
+        background: aliceblue;
+        border-radius: 8px;
+    }
+
+    &__logo{
+        margin: 0 auto 20px auto;
+        width: 50px;
+        padding-top: 20px;
+    }
+
     &__image-bg{
-        height: 100vh;
         background-color: #fae8cf;
+        height: 100vh;
+    }
+
+    &__top-form{
+        text-align: center;
+        h2{
+            font-weight: 800;
+            color: #000000;
+            font-size: 32px;
+        }
+
+        p{
+            font-size: 13px;
+            color: #5a5a59;
+        }
+    }
+    &__mid-form{}
+    &__bottom-form{}
+
+    &__heading{
+        color: gray;
+        font-size: 14px;
+    }
+
+    &__form-group{
+
+        input, select{ 
+            padding: 1.2rem;
+            background-color: #ffffff;
+            font-size: 16px;
+            font-family: 'lato', sans-serif;
+        }
+        span{ font-size: 12px;}
+
+    }
+
+    &__verification{
+        width: 80%;
+        margin: 0 auto;
+        
+
+        &--list{
+            display: inline-flex;
+            padding-left: 1px;
+
+            &:before{
+                counter-increment: Serial;
+                content: "" counter(Serial) ". ";
+                background-color: green;
+                color: #ffffff;
+                padding: 2px;
+                margin: 2px;
+                border-radius: 2px;
+                display: inline;
+            }
+        }
+
+        &--order{
+            box-shadow: 1px 3px 7px #dddddd;
+            padding: 4px 18px;
+        }
     }
 
 }

@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <title>Come House Me by Pelow</title>
     <style>
-        html, body{ 
-            width: 100vw;
-            height: 100vh
-        }
         .divE {
             width: 800px;
         }
@@ -39,27 +35,9 @@
         }
     </style>
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="auth__image-bg">
-                  
-                    <div class="auth__logo">
-                        <a href="/"><img src="{{ asset('img/logo.png') }}" alt="mkm" class="images" /></a>
-                    </div>
-                
-                    <div class="auth__image">
-                        <img src="{{ asset('img/auth.png') }}" alt="mkm" class="images" />
-                    </div>
-                  
-                </div>
-            </div>
-            <div class="col-md-6 flexMe">
-                @yield('content')
-            </div>
-        </div>
-    </div>
+<body class="verify__bg">
+
+@yield('content')
 
 </body>
 </html>
