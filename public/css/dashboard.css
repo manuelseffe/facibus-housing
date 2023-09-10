@@ -11164,6 +11164,7 @@ body {
   font-weight: 600;
 }
 .dashboard ._heading .back_btn {
+  display: block;
   margin: 32px 24px;
 }
 .dashboard .requestForm {
