@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -16,8 +16,9 @@ const mix = require('laravel-mix');
 //         //
 //     ]);
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/scss/app.scss', 'public/css')
-    .copy('node_modules/bootstrap/dist/js/bootstrap.js', 'public/js')
-    // .copy('node_modules/bootstrap/dist/css/bootstrap.css', 'public/css')
-    // .copy('resources/css/style.css', 'public/css');
+mix.js("resources/js/app.js", "public/js")
+    .sass("resources/scss/app.scss", "public/css")
+    .sass("resources/scss/dashboard.scss", "public/css")
+    .copy("node_modules/bootstrap/dist/js/bootstrap.js", "public/js");
+// .copy('node_modules/bootstrap/dist/css/bootstrap.css', 'public/css')
+// .copy('resources/css/style.css', 'public/css');
