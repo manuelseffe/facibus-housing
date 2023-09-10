@@ -1,0 +1,104 @@
+// Font Awesome
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
+//Variable
+@import "partials/variable";
+// Base
+@import "partials/auth";
+// Base
+@import "partials/base";
+// Helpers
+@import "partials/helpers";
+// Typography
+@import "partials/typography";
+// // Main
+// @import "partials/main";
+// Sections
+@import "partials/sections";
+// Navigation
+@import "partials/nav";
+//Components
+@import "components/button";
+@import "components/navigation";
+// Bootstrap
+@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+
+// Dashboard Styles
+.dashboard {
+    background-color: #fafafa;
+    display: flex;
+    min-height: 100vh;
+
+    &__sidebar {
+        background-color: #ffffff;
+        flex-basis: 20%;
+        // padding: 20px;
+
+        &-box {
+            &--logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+        }
+
+        &-menu {
+        }
+
+        &-user {
+        }
+    }
+
+    &__content {
+        flex: 1;
+        padding: 20px;
+    }
+
+    ._heading {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            // margin-bottom: 24px;
+        }
+        .back_btn {
+            display: block;
+            margin: 32px 24px;
+        }
+    }
+
+    .requestForm {
+        width: 100%;
+        max-width: 560px;
+        margin: auto;
+
+        .upload_group {
+            padding: 32px 12px;
+            border-radius: 15px;
+            border: 1px dashed #8c8c8c;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .form_group {
+            margin-bottom: 18px;
+
+            label {
+                color: #131313;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            input,
+            select {
+                padding: 8px 10px;
+            }
+
+            .input-group-text {
+                background-color: #fff;
+            }
+        }
+    }
+}

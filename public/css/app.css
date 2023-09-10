@@ -10882,7 +10882,8 @@ textarea.form-control-lg {
   padding: 4px 18px;
 }
 
-*, *::after,
+*,
+*::after,
 *::before {
   margin: 0;
   padding: 0;
@@ -10891,6 +10892,10 @@ textarea.form-control-lg {
 
 html {
   box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* Helper class */
@@ -11050,25 +11055,6 @@ body {
   background-color: #ffffff;
   padding-top: 50px;
   font-size: 30px;
-}
-
-.dashboard {
-  background-color: #fafafa;
-  display: flex;
-}
-.dashboard__sidebar {
-  background-color: #ffffff;
-  flex-basis: 20%;
-}
-.dashboard__sidebar-box--logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.dashboard__content {
-  flex: 1;
-  padding: 20px;
 }
 
 .backg {

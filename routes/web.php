@@ -44,6 +44,10 @@ Route::get('/identity_verification', function () {
 });
 
 // USER DASHBOARD
-Route::get('/dashboard', function (){
-    return view('user/dashboard');
+Route::get('/dashboard', function () {
+    return view('dashboard.index');
+});
+
+Route::get('/dashboard/request', function () {
+    return view('dashboard.request-new');
 });
