@@ -1,4 +1,5 @@
-@extends('layout.dashboard')
+@extends('layout.dashboard', ['title' => 'Dashboard'])
+
 
 @section('content')
   Dashboard content

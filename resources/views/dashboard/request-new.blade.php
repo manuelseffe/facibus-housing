@@ -1,15 +1,15 @@
-@extends('layout.dashboard')
+@extends('layout.dashboard', ['title' => 'Make a Request'])
 
 @section('content')
   <div class="_heading">
     <h1>Make a Request</h1>
 
-    <div class="back_btn">
+    <a class="back_btn" href="/dashboard">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8 16L9.41 14.59L3.83 9L16 9L16 7L3.83 7L9.41 1.41L8 -6.99382e-07L6.99382e-07 8L8 16Z"
           fill="#131313" />
       </svg>
-    </div>
+    </a>
   </div>
 
   <form class="requestForm">

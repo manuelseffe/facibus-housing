@@ -7,7 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
-  <title>Come House Me by Pelow</title>
+  <title>Come House Me by Pelow @php
+    if (isset($title)) {
+        echo ' | ' . $title;
+    }
+  @endphp</title>
   <style>
     html,
     body {
