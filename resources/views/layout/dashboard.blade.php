@@ -12,6 +12,7 @@
         echo ' | ' . $title;
     }
   @endphp</title>
+
   <style>
     html,
     body {
@@ -48,35 +49,33 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="dashboard">
-      <div class="dashboard__sidebar">
+  <div class="dashboard">
+    <div class="dashboard__sidebar">
 
-        <div class="dashboard__sidebar-box">
-          <div class="dashboard__sidebar-box--logo">
-            <a href="/"><img src="{{ asset('img/logo.png') }}" alt="ComeHouseMe.com" class="images"></a>
-          </div>
+      <div class="dashboard__sidebar-box">
+        <div class="dashboard__sidebar-box--logo">
+          <a href="/"><img src="{{ asset('img/logo.png') }}" alt="ComeHouseMe.com" class="images"></a>
         </div>
-        <div class="dashboard__sidebar-dashboard-menu">
-          <ul class="navigation">
-            <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
-                Overview</a></li>
-            <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
-                Overview</a></li>
-            <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
-                Overview</a></li>
-            <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
-                Overview</a></li>
-          </ul>
-        </div>
-        <div class="dashboard__sidebar-dasboard-user"></div>
-
       </div>
-      <div class="dashboard__content">
-
-        @yield('content')
-
+      <div class="dashboard__sidebar-dashboard-menu">
+        <ul class="navigation">
+          <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
+              Overview</a></li>
+          <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
+              Overview</a></li>
+          <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
+              Overview</a></li>
+          <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
+              Overview</a></li>
+        </ul>
       </div>
+      <div class="dashboard__sidebar-dasboard-user"></div>
+
+    </div>
+    <div class="dashboard__content">
+
+      @yield('content')
+
     </div>
   </div>
 

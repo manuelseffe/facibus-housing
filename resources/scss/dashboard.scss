@@ -1,5 +1,7 @@
 // Font Awesome
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
+// Bootstrap
+@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 //Variable
 @import "partials/variable";
 // Base
@@ -10,17 +12,17 @@
 @import "partials/helpers";
 // Typography
 @import "partials/typography";
+
 // // Main
 // @import "partials/main";
 // Sections
-@import "partials/sections";
+// @import "partials/sections";
 // Navigation
-@import "partials/nav";
+// @import "partials/nav";
+
 //Components
 @import "components/button";
 @import "components/navigation";
-// Bootstrap
-@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 
 // Dashboard Styles
 .dashboard {
@@ -55,6 +57,7 @@
     }
 
     ._heading {
+        padding: 0 12px;
         margin-top: 2rem;
         margin-bottom: 4rem;
 
@@ -63,12 +66,15 @@
             font-weight: 600;
             // margin-bottom: 24px;
         }
+
         .back_btn {
             display: block;
-            margin: 32px 24px;
+            margin: 32px 24px 0;
         }
     }
+}
 
+.request_page {
     .requestForm {
         width: 100%;
         max-width: 560px;
@@ -99,6 +105,23 @@
             .input-group-text {
                 background-color: #fff;
             }
+        }
+    }
+}
+
+.notification_page {
+    ._container {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 14vh;
+
+        .box_icon {
+            width: 120px;
+            margin-bottom: 18px;
         }
     }
 }
