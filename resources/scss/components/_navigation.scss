@@ -2,9 +2,17 @@
     &__list{
         list-style-type: none;
         display: block;
+        padding: 4px;
+        margin-bottom: 4px;
+        
+        .active{
+            background-color: #dddddd;
+        }
     }
     
-    &__item{
+    &__item:link,
+    &__item:visited{
         text-decoration: none !important;
+        color: rgb(19, 18, 18)
     }
 }

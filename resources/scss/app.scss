@@ -1,5 +1,5 @@
-// Font Awesome
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
+// Typography
+@import "partials/typography";
 //Variable
 @import "partials/variable";
 // Base
@@ -8,8 +8,6 @@
 @import "partials/base";
 // Helpers
 @import "partials/helpers";
-// Typography
-@import "partials/typography";
 // Main
 @import "partials/main";
 // Sections
@@ -19,5 +17,7 @@
 //Components
 @import "components/button";
 @import "components/navigation";
+// Font Awesome
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
 // Bootstrap
 @import "../../node_modules/bootstrap/dist/css/bootstrap.css";

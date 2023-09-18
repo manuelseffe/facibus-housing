@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
-  <title>Come House Me by Pelow @php
+  <script src="{{ asset('js/app.js') }}"></script>
+  <title>@php
     if (isset($title)) {
-        echo ' | ' . $title;
+        echo $title . ' | ';
     }
-  @endphp</title>
-
+  @endphp Come House Me by Pelow </title>
   <style>
     html,
     body {
@@ -56,28 +56,48 @@
           <a href="/"><img src="{{ asset('img/logo.png') }}" alt="ComeHouseMe.com" class="images"></a>
         </div>
       </div>
+
       <div class="dashboard__sidebar-dashboard-menu">
         <ul class="navigation">
+          <li class="navigation__list active"><a href="#" class="navigation__item"><i
+                class="fa fa-dashboard"></i> Overview</a></li>
           <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
-              Overview</a></li>
+              Wallet</a></li>
           <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
-              Overview</a></li>
+              Notification</a></li>
           <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
-              Overview</a></li>
-          <li class="navigation__list"><a href="#" class="navigation__item"><i class="fa fa-dashboard"></i>
-              Overview</a></li>
+              Settings</a></li>
         </ul>
       </div>
-      <div class="dashboard__sidebar-dasboard-user"></div>
+
+      <div class="dashboard__sidebar-dasboard-user">
+        <div class="user">
+          <div class="dashboard__userpic">
+            <img class="images" src="{{ asset('img/Avatar.svg') }}" alt="">
+          </div>
+          <div class="dashboard__userinfo">
+            <div class="username">
+              Abdul Shola
+            </div>
+            <div class="useremail">
+              abdulshola@gmail.com
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="dashboard__logout">
+          <a href="#"><img class="images" src="{{ asset('img/logout.svg') }}" alt=""></a>
+        </div>
+      </div>
 
     </div>
+
     <div class="dashboard__content">
-
-      @yield('content')
-
+      <div class="container">
+        @yield('content')
+      </div>
     </div>
   </div>
-
 </body>
 
 </html>
