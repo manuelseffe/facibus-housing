@@ -10819,6 +10819,37 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "tt_firs_neueregular", Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #000000;
+  counter-reset: Serial;
+}
+
+.heading {
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+.heading-2 {
+  font-size: 3rem;
+}
+.heading-2, .heading-3 {
+  margin-bottom: 2rem;
+}
+.heading-3 {
+  font-size: 4rem;
+}
+
+.paragraph {
+  font-size: 16px;
+}
+
 .auth__bg {
   width: 80%;
   padding: 16px 30px;
@@ -11016,39 +11047,12 @@ img {
   padding: 0;
 }
 
+.WelcomeImages {
+  width: 20px;
+}
+
 section {
   padding: 10rem 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "tt_firs_neueregular", Arial, sans-serif;
-  font-size: 1.6rem;
-  color: #000000;
-  counter-reset: Serial;
-}
-
-.heading {
-  font-size: 7rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 4rem;
-}
-.heading-2 {
-  font-size: 3rem;
-}
-.heading-2, .heading-3 {
-  margin-bottom: 2rem;
-}
-.heading-3 {
-  font-size: 4rem;
-}
-
-.paragraph {
-  font-size: 16px;
 }
 
 .main-area {
@@ -11315,7 +11319,13 @@ body {
 .navigation__list {
   list-style-type: none;
   display: block;
+  padding: 4px;
+  margin-bottom: 4px;
 }
-.navigation__item {
+.navigation__list .active {
+  background-color: #dddddd;
+}
+.navigation__item:link, .navigation__item:visited {
   text-decoration: none !important;
+  color: rgb(19, 18, 18);
 }

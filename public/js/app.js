@@ -2062,6 +2062,32 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+// JavaScript function to open a tab
+function openTab(tabName) {
+  var i, tabContent;
+  tabContent = document.getElementsByClassName("tab-content");
+
+  // Hide all tab content
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+
+  // Show the selected tab content
+  document.getElementById(tabName).style.display = "block";
+
+  // Remove the "active" class from all tab buttons
+  var tabButtons = document.getElementsByClassName("tab-button");
+  for (i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove("active");
+  }
+
+  // Add the "active" class to the clicked tab button
+  event.currentTarget.classList.add("active");
+}
+
+// Open the first tab by default
+openTab('tab1');
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -19654,8 +19680,8 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"css/dashboard": 0,
-/******/ 			"css/app": 0
+/******/ 			"css/app": 0,
+/******/ 			"css/dashboard": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -19705,9 +19731,9 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/dashboard","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/dashboard","css/app"], () => (__webpack_require__("./resources/scss/app.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/dashboard","css/app"], () => (__webpack_require__("./resources/scss/dashboard.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/dashboard"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/dashboard"], () => (__webpack_require__("./resources/scss/app.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/dashboard"], () => (__webpack_require__("./resources/scss/dashboard.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
