@@ -28,19 +28,19 @@ Route::get('/contact', function () {
 
 // AUTH
 Route::get('/register', function () {
-    return view('auth/register');
+    return view('auth.register');
 });
 Route::get('/verify', function () {
-    return view('auth/verify');
+    return view('auth.verify');
 });
 Route::get('/login', function () {
-    return view('auth/login');
+    return view('auth.login');
 });
 Route::get('/forget-password', function () {
-    return view('auth/forget-password');
+    return view('auth.forget-password');
 });
 Route::get('/identity_verification', function () {
-    return view('auth/identity_verification');
+    return view('auth.identity_verification');
 });
 
 // USER DASHBOARD
