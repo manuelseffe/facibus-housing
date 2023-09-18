@@ -11108,7 +11108,7 @@ body {
 }
 .dashboard__content {
   flex: 1;
-  padding: 20px;
+  padding: 24px;
 }
 .dashboard ._heading {
   padding: 0 12px;
@@ -11152,16 +11152,58 @@ body {
   background-color: #fff;
 }
 
-.notification_page ._container {
+.notification_page .not_found {
   padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 14vh;
+  margin-top: 19vh;
 }
-.notification_page ._container .box_icon {
+.notification_page .not_found .box_icon {
   width: 120px;
   margin-bottom: 18px;
+}
+.notification_page ._container {
+  padding: 24px;
+  background: #fff;
+}
+.notification_page ._container .search_field {
+  padding: 12px 14px;
+  max-width: 52vw;
+  background: #fafafa;
+}
+.notification_page ._container ._table {
+  margin-top: 5rem;
+}
+.notification_page ._container .notifyItem {
+  max-width: 780px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.notification_page ._container .notifyItem__icon {
+  max-width: 52px;
+}
+.notification_page ._container .notifyItem__content {
+  padding-left: 18px;
+}
+.notification_page ._container .notifyItem__content p {
+  margin-bottom: 0;
+}
+.notification_page ._container .notifyItem__time {
+  align-self: flex-start;
+  margin-left: auto;
+  text-align: right;
+  min-width: 60px;
+  margin-left: 24px;
+  margin-top: 4px;
+}
+.notification_page ._container .see_more_btn {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
 }
