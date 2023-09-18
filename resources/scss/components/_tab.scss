@@ -1,0 +1,24 @@
+.tab{
+
+    &-content{
+        display: block;
+    }
+
+    &-button{
+        color: #333;
+        padding: 10px 6px;
+        border: none;
+        border-bottom: 2px solid green;
+        cursor: pointer;
+        background-color: transparent;
+
+        &:first-child{
+            font-weight: 700;
+        }
+    }
+
+    &.active{
+        background-color: #555;
+        color: #fff;
+    }
+}
