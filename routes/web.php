@@ -51,3 +51,7 @@ Route::get('/dashboard', function () {
 Route::get('/dashboard/request', function () {
     return view('dashboard.request-new');
 });
+
+Route::get('/dashboard/notification', function () {
+    return view('dashboard.notification');
+});
