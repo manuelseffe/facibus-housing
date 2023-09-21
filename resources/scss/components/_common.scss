@@ -1,0 +1,37 @@
+// Form Group
+.form_group {
+    margin-bottom: 18px;
+
+    label {
+        color: #131313;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    input,
+    select {
+        padding: 8px 10px;
+    }
+
+    .input-group-text {
+        background-color: #fff;
+    }
+}
+
+.checbox_form_group {
+    .d-grid {
+        width: 80%;
+
+        span {
+            font-size: 13.6px;
+            margin-top: 6px;
+        }
+    }
+    .form-check:not(.form-switch) .form-check-input {
+        border-radius: 2px;
+    }
+    .form-check-input:checked {
+        background-color: #06a37d;
+        border-color: #06a37d;
+    }
+}
