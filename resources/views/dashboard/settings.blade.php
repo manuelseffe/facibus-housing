@@ -96,12 +96,104 @@
 
         <div class="tab-pane fade" id="nav-security" role="tabpanel" aria-labelledby="nav-security-tab"
           tabindex="0">
+
           <div class="tab_panel_content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum neque fugiat nulla nam fuga tenetur
-            recusandae, aut ab delectus aperiam, animi quam illo. Quasi, dignissimos consequuntur doloremque
-            laudantium
-            quis ratione.
+            <form class="security_form">
+              <div class="checbox_form_group flexSB">
+                <div class="d-grid">
+                  <label for="" class="form-label">Two Factor Authentication (2FA)</label>
+                  <span class="text-gray">Before enabling Two-Factor Authentication, install a 2FA app on your
+                    phone, e.g-LastPass Authenticator or Google Authenticator</span>
+                </div>
+
+                <div class="form-check form-switch" data-bs-toggle="modal" data-bs-target="#TwoFactorModal">
+                  <input class="form-check-input" type="checkbox" role="switch" disabled id="">
+                </div>
+              </div>
+
+              <div class="checbox_form_group flexSB">
+                <div class="d-grid">
+                  <label for="" class="form-label">Password</label>
+                  <span class="text-gray">Reset the password for this account</span>
+                </div>
+
+                <div class="text_btn fs-5" type="button" data-bs-toggle="modal"
+                  data-bs-target="#ChangePasswordModal">
+                  Change Password
+                </div>
+              </div>
+            </form>
           </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  {{-- Settings Modal --}}
+  <div class="modal fade" id="ChangePasswordModal" tabindex="-1" aria-labelledby="ChangePasswordLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body my-2">
+          <h2 class="modal-title fw-bold text-center" id="ChangePasswordLabel">Change Password</h2>
+
+          <form class="changepassword_form mx-auto">
+            <div class="form_group">
+              <label for="" class="form-label">Old Password</label>
+              <input type="password" class="form-control">
+            </div>
+
+            <div class="form_group">
+              <label for="" class="form-label">New Password</label>
+              <input type="password" class="form-control">
+            </div>
+
+            <div class="form_group">
+              <label for="" class="form-label">Confirm New Password</label>
+              <input type="password" class="form-control">
+            </div>
+
+            <div class="modal-footer border-0 mx-auto">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success">Change Password</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="TwoFactorModal" tabindex="-1" aria-labelledby="ChangePasswordLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body my-2">
+          <h2 class="modal-title fw-bold text-center" id="ChangePasswordLabel">Select Authentication method</h2>
+
+          <form class="2fa_form mx-auto">
+            <div class="form_group">
+              <label for="" class="form-label">Authenticator App</label>
+            </div>
+
+            <div class="form_group">
+              <label for="" class="form-label">SMS Verification</label>
+            </div>
+
+            {{-- <div class="modal-footer border-0 mx-auto">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success">Change Password</button>
+            </div> --}}
+          </form>
         </div>
 
       </div>

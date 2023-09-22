@@ -11144,6 +11144,7 @@ section {
 .form_group input,
 .form_group select {
   padding: 8px 10px;
+  box-shadow: none !important;
 }
 .form_group .input-group-text {
   background-color: #fff;
@@ -11442,13 +11443,28 @@ section {
   padding: 28px;
   background: none;
 }
-.settings_page .tab_panel_content {
+.settings_page .tab-pane .tab_panel_content {
   width: 100%;
   max-width: 560px;
 }
-.settings_page .notification_form {
+.settings_page .tab-pane .notification_form {
   margin-top: 38px;
 }
-.settings_page .notification_form .checbox_form_group {
+.settings_page .checbox_form_group {
   margin-bottom: 46px;
+}
+
+.modal form {
+  max-width: 360px;
+  padding: 0 12px;
+  margin-top: 28px;
+}
+.modal .btn-close {
+  position: relative;
+  top: 14px;
+  right: 14px;
+}
+.modal .modal-footer {
+  padding-top: 18px;
+  padding-bottom: 12px;
 }
