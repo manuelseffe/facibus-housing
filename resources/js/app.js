@@ -1,4 +1,4 @@
-require('./bootstrap');
+require("./bootstrap");
 
 // JavaScript function to open a tab
 function openTab(tabName) {
@@ -24,4 +24,4 @@ function openTab(tabName) {
 }
 
 // Open the first tab by default
-openTab('tab1');
+openTab("tab1");

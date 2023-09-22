@@ -1,30 +1,30 @@
 .btn {
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
     border-radius: 15px;
     border: 0px;
     font-weight: bold;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
 
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-right: 12px;
     }
 
     &__gray {
         background-color: #d9d9d9;
         color: inherit;
-        
-        &:hover{
+
+        &:hover {
             background-color: #c9c6c6;
         }
     }
 
-    &__btnColor{
+    &__btnColor {
         background-color: #4fa47e;
         color: #fff;
-        
-        &:hover{
+
+        &:hover {
             background-color: #3c7e61;
         }
     }

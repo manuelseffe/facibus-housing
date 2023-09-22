@@ -10819,6 +10819,22 @@ textarea.form-control-lg {
   }
 }
 @charset "UTF-8";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -10911,22 +10927,6 @@ body {
 .auth__verification--order {
   box-shadow: 1px 3px 7px #dddddd;
   padding: 4px 18px;
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  box-sizing: inherit;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 /* Helper class */
@@ -11055,6 +11055,39 @@ section {
   padding: 10rem 0;
 }
 
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text_btn {
+  color: #198754;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fz-15 {
+  font-size: 15px;
+}
+
+.text-gray {
+  color: #8c8c8c;
+}
+
 .mvpSupporter {
   background-color: #f4fbf7;
   padding: 6rem 0;
@@ -11100,13 +11133,45 @@ section {
   text-decoration: underline;
 }
 
+.form_group {
+  margin-bottom: 18px;
+}
+.form_group label {
+  color: #131313;
+  font-size: 14px;
+  font-weight: 400;
+}
+.form_group input,
+.form_group select {
+  padding: 8px 10px;
+  box-shadow: none !important;
+}
+.form_group .input-group-text {
+  background-color: #fff;
+}
+
+.checbox_form_group .d-grid {
+  width: 80%;
+}
+.checbox_form_group .d-grid span {
+  font-size: 13.6px;
+  margin-top: 6px;
+}
+.checbox_form_group .form-check:not(.form-switch) .form-check-input {
+  border-radius: 2px;
+}
+.checbox_form_group .form-check-input:checked {
+  background-color: #06a37d;
+  border-color: #06a37d;
+}
+
 .btn {
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 15px;
   border: 0px;
   font-weight: bold;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
 }
 .btn:not(:last-child) {
@@ -11165,6 +11230,7 @@ section {
   color: #fff;
 }
 
+/* Dashboard Styles */
 .dashboard {
   background-color: #fafafa;
   display: flex;
@@ -11182,7 +11248,7 @@ section {
 }
 .dashboard__sidebar {
   background-color: #ffffff;
-  flex-basis: 0 0 auto;
+  max-width: 268px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -11203,7 +11269,7 @@ section {
   overflow-y: scroll;
 }
 .dashboard ._heading {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 4rem;
 }
 .dashboard ._heading h1 {
@@ -11294,21 +11360,6 @@ section {
   margin-bottom: 24px;
   text-align: center;
 }
-.request_page .requestForm .form_group {
-  margin-bottom: 18px;
-}
-.request_page .requestForm .form_group label {
-  color: #131313;
-  font-size: 14px;
-  font-weight: 400;
-}
-.request_page .requestForm .form_group input,
-.request_page .requestForm .form_group select {
-  padding: 8px 10px;
-}
-.request_page .requestForm .form_group .input-group-text {
-  background-color: #fff;
-}
 
 .notification_page .not_found {
   padding: 24px;
@@ -11364,4 +11415,56 @@ section {
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
+}
+
+.settings_page .nav-tabs {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+.settings_page .nav-tabs .nav-link.active {
+  color: #131313;
+  font-weight: 600;
+  background: none;
+  border-bottom: 2px solid #06a37d !important;
+}
+.settings_page .nav-tabs .nav-link {
+  color: #8c8c8c;
+  padding: 6px 24px 8px;
+  border-bottom: 1.4px solid #dedede !important;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.settings_page .tab-pane {
+  padding: 28px;
+  background: none;
+}
+.settings_page .tab-pane .tab_panel_content {
+  width: 100%;
+  max-width: 560px;
+}
+.settings_page .tab-pane .notification_form {
+  margin-top: 38px;
+}
+.settings_page .checbox_form_group {
+  margin-bottom: 46px;
+}
+
+.modal form {
+  max-width: 360px;
+  padding: 0 12px;
+  margin-top: 28px;
+}
+.modal .btn-close {
+  position: relative;
+  top: 14px;
+  right: 14px;
+}
+.modal .modal-footer {
+  padding-top: 18px;
+  padding-bottom: 12px;
 }
