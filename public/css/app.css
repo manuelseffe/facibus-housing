@@ -11051,8 +11051,15 @@ img {
   width: 20px;
 }
 
-section {
-  padding: 10rem 0;
+.pendingIndicator {
+  background-color: rgb(231, 185, 100);
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+
+.pendingIndicator span:nth-child(1) {
+  color: rgb(235, 158, 17);
+  font-weight: 800;
 }
 
 .main-area {
@@ -11253,6 +11260,38 @@ section {
   background-color: #ffffff;
 }
 
+.wallet-bottom {
+  margin-top: 80px;
+}
+.wallet-bottom__bg {
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.history-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchbox {
+  flex-basis: 40%;
+  border-radius: 5px;
+  padding: 8px;
+  background: #ddd;
+}
+.searchbox .icon::before {
+  content: "";
+}
+
+.downloadbtn:visited,
+.downloadbtn:link {
+  text-decoration: none;
+  color: #06A37D;
+  font-weight: 800;
+}
+
 .nav {
   background: #ffffff;
   box-shadow: 0px 2px 16px 2px #ddd;
@@ -11285,7 +11324,7 @@ section {
 }
 
 .btn {
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 15px;
   border: 0px;
   font-weight: bold;
@@ -11295,6 +11334,10 @@ section {
 }
 .btn:not(:last-child) {
   margin-right: 12px;
+}
+.btn_request {
+  color: #06A37D;
+  background-color: #f4fafa;
 }
 .btn__gray {
   background-color: #d9d9d9;

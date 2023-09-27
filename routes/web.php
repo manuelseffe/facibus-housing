@@ -55,3 +55,7 @@ Route::get('/dashboard/request', function () {
 Route::get('/dashboard/notification', function () {
     return view('dashboard.notification');
 });
+
+Route::get('/dashboard/wallet', function () {
+    return view('dashboard.wallet');
+});

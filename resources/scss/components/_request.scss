@@ -1,0 +1,41 @@
+.request{
+
+    &-card{
+        background-color: #ffffff;
+        padding: 15px;
+        box-shadow: 1px 1px 5px 3px #dddddd;
+    }
+
+    &__image,&__details, &-card {
+        border-radius: 15px;
+    }
+    
+    &__details{
+        color: #ffffff;
+        background-color: $secondary-color;
+        padding: 20px;
+    }
+    
+    &__title{
+        margin-top: 10px;
+        font-weight: 800;
+        font-size: 20px;
+        
+        &-small{
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+    }
+    &__amount-receive{
+        margin-bottom: 20px;
+        span:not(:last-child){
+            display: block;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        span{ 
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+}

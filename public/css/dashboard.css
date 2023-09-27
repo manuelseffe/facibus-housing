@@ -11051,8 +11051,15 @@ img {
   width: 20px;
 }
 
-section {
-  padding: 10rem 0;
+.pendingIndicator {
+  background-color: rgb(231, 185, 100);
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+
+.pendingIndicator span:nth-child(1) {
+  color: rgb(235, 158, 17);
+  font-weight: 800;
 }
 
 .mvpSupporter {
@@ -11067,6 +11074,38 @@ section {
 
 .solution, .features {
   background-color: #ffffff;
+}
+
+.wallet-bottom {
+  margin-top: 80px;
+}
+.wallet-bottom__bg {
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.history-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchbox {
+  flex-basis: 40%;
+  border-radius: 5px;
+  padding: 8px;
+  background: #ddd;
+}
+.searchbox .icon::before {
+  content: "";
+}
+
+.downloadbtn:visited,
+.downloadbtn:link {
+  text-decoration: none;
+  color: #06A37D;
+  font-weight: 800;
 }
 
 .nav {
@@ -11101,7 +11140,7 @@ section {
 }
 
 .btn {
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 15px;
   border: 0px;
   font-weight: bold;
@@ -11111,6 +11150,10 @@ section {
 }
 .btn:not(:last-child) {
   margin-right: 12px;
+}
+.btn_request {
+  color: #06A37D;
+  background-color: #f4fafa;
 }
 .btn__gray {
   background-color: #d9d9d9;
@@ -11163,6 +11206,41 @@ section {
 .tab.active {
   background-color: #555;
   color: #fff;
+}
+
+.request-card {
+  background-color: #ffffff;
+  padding: 15px;
+  box-shadow: 1px 1px 5px 3px #dddddd;
+}
+.request__image, .request__details, .request-card {
+  border-radius: 15px;
+}
+.request__details {
+  color: #ffffff;
+  background-color: #06A37D;
+  padding: 20px;
+}
+.request__title {
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 20px;
+}
+.request__title-small {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+.request__amount-receive {
+  margin-bottom: 20px;
+}
+.request__amount-receive span:not(:last-child) {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
+.request__amount-receive span {
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .dashboard {

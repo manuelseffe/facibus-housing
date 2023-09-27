@@ -1,5 +1,5 @@
 .btn {
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
     border-radius: 15px;
     border: 0px;
     font-weight: bold;
@@ -9,6 +9,11 @@
 
     &:not(:last-child){
         margin-right: 12px;
+    }
+
+    &_request{
+        color: $secondary-color;
+        background-color: $primary-color;
     }
 
     &__gray {

@@ -6,10 +6,46 @@
 .activeSupport{
     padding: 10rem 0;
     background-color: #f5f5f5;
-
 }
 
 .solution, .features{
     background-color: #ffffff;
+}
+.wallet{
+    &-bottom{
+        margin-top: 80px;
 
+        &__bg{
+            padding: 20px;
+            border-radius: 15px;
+
+            background: #fff;
+        }
+    }
+}
+
+.history-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchbox{
+    flex-basis: 40%;
+    border-radius: 5px;
+
+    padding: 8px;
+    background: #ddd;
+
+    .icon::before {
+        content: "";
+        
+    }
+}
+
+
+.downloadbtn:visited,
+.downloadbtn:link{
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: 800;
 }
