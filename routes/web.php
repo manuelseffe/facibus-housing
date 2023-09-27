@@ -56,6 +56,12 @@ Route::get('/dashboard/notification', function () {
     return view('dashboard.notification');
 });
 
+<<<<<<< HEAD
 Route::get('/dashboard/wallet', function () {
     return view('dashboard.wallet');
 });
+=======
+Route::get('/dashboard/settings', function () {
+    return view('dashboard.settings');
+});
+>>>>>>> 047489ebfd1ce6d5a13e1bf7695d7e5880abe835

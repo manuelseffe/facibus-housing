@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
   <script src="{{ asset('js/app.js') }}"></script>
+<<<<<<< HEAD
   <title> @php if (isset($title)) { echo $title . ' | '; } @endphp Come House Me by Pelow </title>
+=======
+  <title>@php
+    if (isset($title)) {
+        echo $title . ' | ';
+    }
+  @endphp Come House Me by Pelow </title>
+
+>>>>>>> 047489ebfd1ce6d5a13e1bf7695d7e5880abe835
   <style>
     html,
     body {
@@ -55,10 +64,28 @@
 
       <div class="dashboard__sidebar-dashboard-menu">
         <ul class="navigation">
+<<<<<<< HEAD
           <li class="navigation__list active"><a href="{{ url('dashboard') }}" class="navigation__item"><i class="fa fa-dashboard"></i> Overview</a></li>
           <li class="navigation__list"><a href="{{ url('dashboard/wallet') }}" class="navigation__item"><i class="fa fa-dashboard"></i>Wallet</a></li>
           <li class="navigation__list"><a href="{{ url('dashboard/notification') }}" class="navigation__item"><i class="fa fa-dashboard"></i>Notification</a></li>
           <li class="navigation__list"><a href="{{ url('dashboard/settings') }}" class="navigation__item"><i class="fa fa-dashboard"></i>Settings</a></li>
+=======
+          <li class="navigation__list active">
+            <a href="/dashboard" class="navigation__item"><i class="fa fa-dashboard"></i> Overview</a>
+          </li>
+          <li class="navigation__list">
+            <a href="/dashboard/wallet" class="navigation__item"><i class="fa fa-dashboard"></i>
+              Wallet</a>
+          </li>
+          <li class="navigation__list">
+            <a href="/dashboard/notification" class="navigation__item"><i class="fa fa-dashboard"></i>
+              Notification</a>
+          </li>
+          <li class="navigation__list">
+            <a href="/dashboard/settings" class="navigation__item"><i class="fa fa-dashboard"></i>
+              Settings</a>
+          </li>
+>>>>>>> 047489ebfd1ce6d5a13e1bf7695d7e5880abe835
         </ul>
       </div>
 

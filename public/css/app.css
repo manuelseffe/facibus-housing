@@ -11062,6 +11062,39 @@ img {
   font-weight: 800;
 }
 
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text_btn {
+  color: #198754;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fz-15 {
+  font-size: 15px;
+}
+
+.text-gray {
+  color: #8c8c8c;
+}
+
 .main-area {
   background-color: #ffffff;
   padding-top: 50px;
@@ -11329,7 +11362,7 @@ img {
   border: 0px;
   font-weight: bold;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
 }
 .btn:not(:last-child) {
