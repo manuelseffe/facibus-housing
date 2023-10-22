@@ -106,7 +106,8 @@
                     phone, e.g-LastPass Authenticator or Google Authenticator</span>
                 </div>
 
-                <div class="form-check form-switch" data-bs-toggle="modal" data-bs-target="#TwoFactorModal">
+                <div class="form-check form-switch clickable" data-bs-toggle="modal"
+                  data-bs-target="#TwoFactorModal">
                   <input class="form-check-input" type="checkbox" role="switch" disabled id="">
                 </div>
               </div>
@@ -177,26 +178,67 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-        <div class="modal-body my-2">
+        <div class="modal-body twoFa_Select">
           <h2 class="modal-title fw-bold text-center" id="ChangePasswordLabel">Select Authentication method</h2>
 
-          <form class="2fa_form mx-auto">
-            <div class="form_group">
-              <label for="" class="form-label">Authenticator App</label>
+          <div class="content mx-auto">
+            <div class="twoFaSelect_item">
+              <label for="" class="">Authenticator App</label>
+              <span class="text-gray">
+                Use an authenticator app to get an authentication code whenever you login to your below account.
+              </span>
             </div>
 
-            <div class="form_group">
-              <label for="" class="form-label">SMS Verification</label>
+            <div class="twoFaSelect_item">
+              <label for="" class="">SMS Verification</label>
+              <span class="text-gray">
+                Use your mobile phone to receive a text message with an authentication code whenever you log in to
+                your below account
+              </span>
             </div>
 
             {{-- <div class="modal-footer border-0 mx-auto">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               <button type="submit" class="btn btn-success">Change Password</button>
             </div> --}}
+          </div>
+        </div>
+
+        <div class="modal-body twoFa_QRcode d-none">
+          <h2 class="modal-title fw-bold text-center" id="ChangePasswordLabel">Scan QR Code</h2>
+          <p class="text-gray text-center mt-3 mx-4 fz-14">
+            To enable 2FA, please scan this QR code with your Authenticator App and enter the verification code
+            below.
+          </p>
+
+          <form class="content mx-auto">
+            <div class="QRcode_img mx-auto">
+              <img class="" src="/images/icons/QRcode.svg" alt="">
+            </div>
+
+            <div class="form_group">
+              <label for="" class="form-label fw-bold">Verification code</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="modal-footer border-0 mx-auto">
+              <button type="submit" class="btn btn-success mx-auto">Finish Setup</button>
+            </div>
           </form>
         </div>
 
       </div>
     </div>
   </div>
+
+  <script>
+    window.addEventListener('load', function() {
+
+      // Vanilla Javascript Window Load Event
+      document.querySelector('.twoFa_Select .twoFaSelect_item').addEventListener('click', function() {
+        document.querySelector('.twoFa_Select').classList.add('d-none');
+        document.querySelector('.twoFa_QRcode').classList.remove('d-none');
+      });
+    })
+  </script>
 @endsection
