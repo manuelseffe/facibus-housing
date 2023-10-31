@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Http\Request;
+use Laravel\Fortify\Fortify;
+use Laravel\Fortify\Features;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +26,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
     }
 }

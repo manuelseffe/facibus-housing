@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
 Route::get('/request', function () {
     return view('request');
 });
@@ -27,25 +29,32 @@ Route::get('/contact', function () {
 });
 
 // AUTH
-Route::get('/register', function () {
-    return view('auth.register');
-});
+
 Route::get('/verify', function () {
     return view('auth.verify');
 });
-Route::get('/login', function () {
-    return view('auth.login');
-});
+
+// Route::get('/login', function () {
+//     return view('auth.login');
+// })->middleware('guest')->name('login');
+
 Route::get('/forget-password', function () {
     return view('auth.forget-password');
 });
-Route::get('/identity_verification', function () {
+Route::get('/identity-verification', function () {
     return view('auth.identity_verification');
 });
 
 // USER DASHBOARD
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
+// Route::view('/dashboard', 'dashboard')->middleware('auth');
+// Route::get('/dashboard', function () {
+//     return view('dashboard.index');
+// })->middleware('auth');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::get('/dashboard/request', [DashboardController::class, 'request']);
 });
 
 Route::get('/dashboard/request', function () {
@@ -56,12 +65,9 @@ Route::get('/dashboard/notification', function () {
     return view('dashboard.notification');
 });
 
-<<<<<<< HEAD
-Route::get('/dashboard/wallet', function () {
-    return view('dashboard.wallet');
-});
-=======
 Route::get('/dashboard/settings', function () {
     return view('dashboard.settings');
 });
->>>>>>> 047489ebfd1ce6d5a13e1bf7695d7e5880abe835
+Route::get('/dashboard/wallet', function () {
+    return view('dashboard.wallet');
+});
