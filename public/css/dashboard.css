@@ -11200,12 +11200,20 @@ section {
   cursor: pointer;
 }
 
+.fz-14 {
+  font-size: 14px;
+}
+
 .fz-15 {
   font-size: 15px;
 }
 
 .text-gray {
   color: #8c8c8c;
+}
+
+.clickable {
+  cursor: pointer;
 }
 
 .mvpSupporter {
@@ -11612,12 +11620,13 @@ section {
 }
 
 .settings_page .nav-tabs {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   border: none;
   border-radius: 0;
   background: none;
   box-shadow: none;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 .settings_page .nav-tabs .nav-link.active {
   color: #131313;
@@ -11649,7 +11658,7 @@ section {
 }
 
 .modal form {
-  max-width: 360px;
+  max-width: 380px;
   padding: 0 12px;
   margin-top: 28px;
 }
@@ -11661,4 +11670,31 @@ section {
 .modal .modal-footer {
   padding-top: 18px;
   padding-bottom: 12px;
+}
+.modal#TwoFactorModal .modal-body {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.modal#TwoFactorModal .content {
+  padding: 0 16px;
+  margin-top: 28px;
+}
+.modal#TwoFactorModal .twoFa_Select .twoFaSelect_item {
+  padding: 8px 18px;
+  border-radius: 6px;
+  margin-bottom: 22px;
+  border: 1px solid #8c8c8c;
+  cursor: pointer;
+}
+.modal#TwoFactorModal .twoFa_Select .twoFaSelect_item label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+}
+.modal#TwoFactorModal .twoFa_Select .twoFaSelect_item .text-gray {
+  font-size: 13px;
+}
+.modal#TwoFactorModal .twoFa_QRcode .QRcode_img {
+  max-width: 150px;
+  margin-bottom: 22px;
 }

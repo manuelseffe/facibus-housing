@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 
@@ -14,6 +15,7 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
+// Pages Routes
 Route::get('/', function () {
     return view('home');
 });
@@ -28,6 +30,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+<<<<<<< HEAD
 // AUTH
 
 Route::get('/verify', function () {
@@ -56,17 +59,39 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/dashboard/request', [DashboardController::class, 'request']);
 });
+=======
 
-Route::get('/dashboard/request', function () {
-    return view('dashboard.request-new');
+// Auth
+Route::post('/logout', function () {
+    Auth::logout();
+    return redirect('login');
 });
 
-Route::get('/dashboard/notification', function () {
-    return view('dashboard.notification');
-});
+// USER DASHBOARD
+Route::middleware(['auth'])->group(function () {
+    Route::get('/verify', function () {
+        return view('auth.verify');
+    });
+    Route::get('/identity_verification', function () {
+        return view('auth.identity_verification');
+    });
+>>>>>>> 9e9673466a2d2f7048b22364b484d503fcb30e1a
 
-Route::get('/dashboard/settings', function () {
-    return view('dashboard.settings');
+    Route::get('/dashboard', function () {
+        return view('dashboard.index');
+    });
+
+    Route::get('/dashboard/request', function () {
+        return view('dashboard.request-new');
+    });
+
+    Route::get('/dashboard/notification', function () {
+        return view('dashboard.notification');
+    });
+
+    Route::get('/dashboard/settings', function () {
+        return view('dashboard.settings');
+    });
 });
 Route::get('/dashboard/wallet', function () {
     return view('dashboard.wallet');

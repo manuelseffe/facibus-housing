@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "e80fac253c94da9bf5f0d1bff2b5e764",
+=======
+    "content-hash": "956aed1bf5c1f68cca397e94b9ef8c6b",
+>>>>>>> 9e9673466a2d2f7048b22364b484d503fcb30e1a
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2845,6 +2849,7 @@
             "time": "2022-06-13T21:57:56+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "psr/cache",
             "version": "1.0.1",
             "source": {
@@ -2894,6 +2899,8 @@
             "time": "2016-08-06T20:24:11+00:00"
         },
         {
+=======
+>>>>>>> 9e9673466a2d2f7048b22364b484d503fcb30e1a
             "name": "psr/container",
             "version": "1.1.2",
             "source": {
@@ -8401,5 +8408,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }

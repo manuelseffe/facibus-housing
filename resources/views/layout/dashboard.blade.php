@@ -79,7 +79,11 @@
           <br>
         </div>
         <div class="dashboard__logout">
-          <a href="#"><img class="images" src="{{ asset('img/logout.svg') }}" alt=""></a>
+          <a href="/logout" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+            <img class="images" src="{{ asset('img/logout.svg') }}" alt="">
+            <form id="logout-form" action="/logout" method="POST" class="d-none">@csrf
+            </form>
+          </a>
         </div>
       </div>
 

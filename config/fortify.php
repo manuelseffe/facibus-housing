@@ -146,6 +146,7 @@ return [
 
     'features' => [
         Features::registration(),
+<<<<<<< HEAD
         // Features::resetPasswords(),
         // // Features::emailVerification(),
         // Features::updateProfileInformation(),
@@ -155,6 +156,17 @@ return [
         //     'confirmPassword' => true,
         //     // 'window' => 0,
         // ]),
+=======
+        Features::resetPasswords(),
+        // Features::emailVerification(),
+        Features::updateProfileInformation(),
+        Features::updatePasswords(),
+        Features::twoFactorAuthentication([
+            'confirm' => true,
+            'confirmPassword' => true,
+            // 'window' => 0,
+        ]),
+>>>>>>> 9e9673466a2d2f7048b22364b484d503fcb30e1a
     ],
 
 ];
