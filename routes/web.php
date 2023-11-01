@@ -30,36 +30,6 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-<<<<<<< HEAD
-// AUTH
-
-Route::get('/verify', function () {
-    return view('auth.verify');
-});
-
-// Route::get('/login', function () {
-//     return view('auth.login');
-// })->middleware('guest')->name('login');
-
-Route::get('/forget-password', function () {
-    return view('auth.forget-password');
-});
-Route::get('/identity-verification', function () {
-    return view('auth.identity_verification');
-});
-
-// USER DASHBOARD
-// Route::view('/dashboard', 'dashboard')->middleware('auth');
-// Route::get('/dashboard', function () {
-//     return view('dashboard.index');
-// })->middleware('auth');
-
-Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
-    Route::get('/dashboard/request', [DashboardController::class, 'request']);
-});
-=======
 
 // Auth
 Route::post('/logout', function () {
@@ -75,7 +45,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/identity_verification', function () {
         return view('auth.identity_verification');
     });
->>>>>>> 9e9673466a2d2f7048b22364b484d503fcb30e1a
 
     Route::get('/dashboard', function () {
         return view('dashboard.index');
